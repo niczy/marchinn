@@ -1,3 +1,4 @@
 *~
 *.pyc
 app/build
+app/bower_components
