@@ -2,5 +2,31 @@ runtime: go
 api_version: go1
 
 handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /
+  static_files : app/build/default/index.html
+  upload: app/build/default/index.html
+
+- url: /src
+  static_dir: app/build/default/src 
+
+- url: /bower_components
+  static_dir: app/build/default/bower_components
+
+- url: /html
+  static_dir: html 
+
+- url: /img
+  static_dir: img 
+
+- url: /css
+  static_dir: css 
+
+- url: /js
+  static_dir: js 
+
 - url: /.*
   script: _go_app
