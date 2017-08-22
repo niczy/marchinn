@@ -1,4 +1,5 @@
 *~
 *.pyc
+*.swp
 app/build
 app/bower_components

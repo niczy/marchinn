@@ -1,13 +1,74 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
 <dom-module id="marchinn-element-app">
   <template>
+    <style include="iron-flex"></style>
     <style>
       :host {
         display: block;
+        width: 100%;
       }
+      .product-container {
+        margin-top: 30px;
+      }
+      .product {
+        height: 440px;
+        width: 100%;
+        padding-top: 80px 0 40px;
+        background: linear-gradient(#eee,#fff);
+      }
+      .product-img {
+        margin: 20px;
+        height: 400px;
+        width: 400px;
+
+      }
+      .nav {
+        height: 40px;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .svg-icon {
+        height: 24px;
+        width: 24px;
+      }
+
     </style>
-    <h2>Hello [[prop1]]!</h2>
+    <div class="nav layout horizontal">
+      <div class="logo">
+        Marchinn
+      </div>
+      <div class="nav-fit flex" >
+      </div>
+      <div class="svg-icon">
+        <svg viewBox="0 0 24 24"><path d="M7,18c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S8.1,18,7,18z M1,4h2l3.6,7.6L5.2,14C5.1,14.3,5,14.7,5,15c0,1.1,0.9,2,2,2h12 v-2H7.4c-0.1,0-0.2-0.1-0.2-0.2c0,0,0-0.1,0-0.1L8.1,13h7.4c0.8,0,1.4-0.4,1.7-1l3.6-6.5C21,5.3,21,5.2,21,5c0-0.6-0.4-1-1-1H5.2 L4.8,3.1C4.5,2.5,3.8,2,3,2H1V4z M17,18c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S18.1,18,17,18z"></path></svg>
+      </div>
+    </div>
+    <div class="product-container layout vertical">
+    <div class="product">
+      <h2>
+        MarchInn Electric Car Scissor Jack for 12V DC 3.0T（6600lb）
+      </h2>
+      <img class="product-img" src="http://marchinn.com/img/001/1.jpg">
+    </div>
+    <div class="product">
+      <h2>
+        MarchInn Electric Car Scissor Jack for 12V DC 3.0T（6600lb）
+      </h2>
+      <img class="product-img" src="http://marchinn.com/img/002/1.jpg">
+    </div>
+    <div class="product">
+      <h2>
+        MarchInn 12V DC 3.0T(6600lb) Electric Hydraulic Floor Jack and Tire Inflator Pump and LED Flashlight 3 in 1 Set with Electric Impact Wrench Car Repair Tool Kit 
+      </h2>
+      <img class="product-img" src="http://marchinn.com/img/003/1.jpg">
+    </div>
+    </div>
   </template>
 
   <script>
